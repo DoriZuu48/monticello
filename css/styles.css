@@ -1,0 +1,470 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url(./fonts/GothamMediumRegular/gotham-medium-webfont.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url(./fonts/gothambold/gothambold1.woff);
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url(./fonts/GothamBook/GothamBook.woff);
+    font-weight: bold;
+    font-style: bold;
+}
+body{
+	font-family: 'Gotham',sans-serif;
+}
+.header{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url(../image/monticello_header.jpg);
+	background-size: cover;
+	min-height: 100vh;
+}
+
+#circle{
+	border: 1px solid white;
+	padding: 4px;
+	border-radius: 50px;	
+}
+	.header_notification{
+	height: 20vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+	.header_notification__list{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	list-style-type: none;
+	text-decoration: none;
+	width: 40vw;
+	height: 10vh;
+}
+.header_notification__list--item{
+	list-style-type: none;
+	cursor: pointer;
+	color: white;
+	font-size: 14pt;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+.swiper-container {
+width: 100%;
+height: 400px;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.header_navigation{
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 15px;
+	width: 10vw;
+	height: 10vh;
+}
+.header_angle{
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	padding: 0 0 50px 0;
+}
+.header_angle__down{
+	display: flex;
+	justify-content: center;
+	align-content: center;	
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	border: 1px solid white;
+	padding: 5px;
+	border-radius: 50px;
+	width: 40px;
+	height: 40px;
+}
+.down{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 5vw;
+	height: 40px;
+}
+.icon{
+	cursor: pointer;
+	border: 1px solid white;
+	padding: 7px;
+	border-radius: 50px;	
+}
+.header_text{
+	height: 70vh;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.header_text__head{
+	font-size: 80pt;
+}
+.header_text__content{
+	font-size: 14pt;
+}
+
+.projects{
+	min-height: 100vh;
+}
+.projects_headline__line{
+	padding: 10px;
+	border-top: 2px solid black; 
+	width: 50px;
+}
+.projects_headline{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 30vh;
+	width: auto;
+	font-size: 30px;
+}
+.projects_information{
+	display: flex;
+	justify-content:center;
+	align-items: flex-start;
+	position: absolute;
+}
+.projects_information__square--left{
+	width: 450px;
+	height: 350px;
+	background-color: #55B7FF;
+	position: relative;
+	
+}
+.projects_information__image--left{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 50px;
+	left: 170px;
+}
+.projects_content{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	position: relative;
+	left: 700px;
+	height: 70vh;
+	width: 40vw;
+}
+.projects_content__title{
+	font-size: 20px;
+}
+.projects_content__head{
+	font-size: 35px;
+}
+.projects_content__text{
+	padding-top: 30px;
+}
+.projects_content__buttom{
+	padding-top: 20px;
+}
+button{
+	background-color: white;
+	border: 1px solid #182D47;
+	text-transform: uppercase;
+	color: #182D47;
+	font-size: 15px;
+	width: 200px;
+	height: 50px;
+}
+.projects_content__navigation{
+	padding-top: 40px;
+	font-style: italic;
+}
+.projects_information--right{
+	display: flex;
+	justify-content:center;
+	align-items: flex-end;
+	position: absolute;
+}
+.projects_information__square--right{
+	width: 450px;
+	height: 350px;
+	background-color: #7E5AFF;
+	left: 899px;
+	bottom: 10px;
+	position: relative;
+	
+}
+.projects_information__image--right{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 150px;
+	left: 700px;
+}
+.projects_content--left{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+	top: 150px;
+	right: 350px;
+	height: 70vh;
+	width: 40vw;
+}
+.projects_content__title--left{
+	font-size: 20px;
+}
+.projects_content__head--left{
+	font-size: 35px;
+}
+.projects_content__text--left{
+	padding-top: 30px;
+}
+.projects_content__buttom--left{
+	padding-top: 20px;
+}
+.news{
+	background-image: url(../image/monticello_news.jpg);
+	min-height: 130vh;
+}
+.news_headline{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 20vh;
+	width: auto;
+	color: white;
+	font-size: 30px;
+}
+.news_headline__line{
+	padding: 10px;
+	border-top: 2px solid white; 
+	width: 50px;
+}
+
+.news_content{
+	display: flex;
+	flex-direction: row nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+.news_content__block{
+	background-color: white;
+	width: 370px;
+	height: 500px;
+}
+.news_content__block--image{
+	background-size: contain;
+}
+.news_content__block--text{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 35vh;
+}
+.news_content__block--header{
+	width: 25vw;
+}
+.news_content__block--content{
+	width: 25vw;
+}
+.news_content__block--author{
+	display: flex;
+	width: 25vw;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.news_content__block--info{
+	padding:0 15px 0 15px;
+}
+.news_content__block--data{
+	color: #7E5AFF;
+}
+.swiper-container .news{
+	width: 100%;
+	height: 100%;
+  }
+  .swiper-slide .news {
+	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: space-around;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+  }
+.gallery{
+	min-height: 100vh;
+}
+.gallery_headline{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 35vh;
+	width: auto;
+	color: black;
+	font-size: 30px;
+}
+.gallery_headline__line{
+	padding: 10px;
+	border-top: 2px solid black; 
+	width: 50px;
+}
+.gallery_content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+.gallery_content__collage{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: flex-end;
+	width: 80vw;
+}
+.two{
+	position: relative;
+	bottom: 200px;
+}
+.gallery_content__collage--image{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0 1vw 0 1vw;
+	width: 250px;
+	height: 200px;
+}
+.gallery_buttom{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	position: relative;
+	bottom: 100px;
+}
+#map {
+	height: 630px;
+  }
+.card{
+	height: 0;
+	width: 0;
+	position: relative;
+	left: 450px;
+	bottom: 200px;
+}
+.card_headline{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	color: black;
+	font-size: 25px;
+	width: 40.3vw;
+	height: 15vh;
+	background-color: white;
+}
+.card_headline__line{
+	padding: 10px;
+	border-top: 2px solid black; 
+	width: 50px;
+}
+.card_data{
+	display: flex;
+	width: 500px;
+	height: 200px;
+	background-color: white;
+	padding: 25px;
+  }
+  .item{
+	list-style-type: none;
+	padding: 10px;
+	margin: 5px;
+	width: 250px;
+  }
+  .card_data_form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 250px;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+  }
+  #text{
+	border: none;
+	border-bottom: 1px solid black; 
+  }
+  #email{
+	border: none;
+	border-bottom: 1px solid black; 
+  }
+
+footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	color: white;
+	min-height: 60vh;
+	background-image: url(../image/monticello_header.jpg);
+}
+.footer_navigation{
+	font-size: 20px;
+	width: 15vw;
+	height: 10vh;
+}
+.footer_text{
+	padding-top: 30px;
+	width: 30vw;
+	height: 10vh;
+}
